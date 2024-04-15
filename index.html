@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Record Management App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="map"></div> 
+        <div id="time"></div> <!-- Display Time -->
+        <h1>Record Management App</h1>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+
+        <div>
+            <label for="deposit">Amount Deposited:</label>
+            <input type="number" id="deposit" placeholder="Enter Amount Deposited">
+        </div>
+
+        <div>
+            <label for="withdraw">Amount Withdrawn:</label>
+            <input type="number" id="withdraw" placeholder="Enter Amount Withdrawn">
+        </div>
+
+        <button onclick="addRecord()">Add Record</button>
+        <button onclick="showCalculator()">Calculator</button>
+        
+
+        <table id="recordsTable">
+            <tr>
+                <th>Name</th>
+                <th>Amount Deposited</th>
+                <th>Amount Withdrawn</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+ 
+    <div id="calculator" class="calculator">
+        <!-- Calculator content will be added dynamically -->
+   
+    </div>
+  
+    
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
